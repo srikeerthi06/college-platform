@@ -20,7 +20,7 @@ model College {
   rating    Float
   placement Float
 
-  courses   String
-  reviews   String
+  courses   String[]
+  reviews   String[]
 
 }
