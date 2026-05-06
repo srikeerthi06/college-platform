@@ -18,8 +18,9 @@ app.get("/colleges", async (req, res) => {
     const colleges = await prisma.college.findMany();
     res.json(colleges);
   } catch (error) {
-    res.status(500).json({ error: "Error fetching colleges" });
-  }
+  console.error(error); // 👈 ADD THIS
+  res.status(500).json({ error: error.message });
+}
 });
 
 app.listen(5000, () => {
