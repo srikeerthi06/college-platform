@@ -11,10 +11,15 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    API.get("/colleges")
-      .then((res) => setColleges(res.data))
-      .catch((err) => console.error(err));
-  }, []);
+  fetch("https://college-backend-q4n4.onrender.com/colleges")
+    .then((res) => res.json())
+    .then((data) => {
+  console.log("API DATA:", data);
+  alert(JSON.stringify(data));
+  setColleges(data);
+})
+    .catch((err) => console.error(err));
+}, []);
 
   // 🔥 Compare logic
   const handleCompare = (college) => {
