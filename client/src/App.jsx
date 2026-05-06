@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Landing />} />
 
         {/* Main App */}
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
 
         {/* Detail Page */}
         <Route path="/college/:id" element={<CollegeDetail />} />
