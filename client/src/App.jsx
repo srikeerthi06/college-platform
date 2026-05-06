@@ -8,14 +8,13 @@ import Predictor from "./pages/Predictor";
 function App() {
   return (
     <BrowserRouter>
-
       <Routes>
 
         {/* Landing Page */}
         <Route path="/" element={<Landing />} />
 
         {/* Main App */}
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
 
         {/* Detail Page */}
         <Route path="/college/:id" element={<CollegeDetail />} />
@@ -24,7 +23,6 @@ function App() {
         <Route path="/predictor" element={<Predictor />} />
 
       </Routes>
-
     </BrowserRouter>
   );
 }
