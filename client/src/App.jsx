@@ -1,5 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Home from "./pages/Home";
 import CollegeDetail from "./pages/CollegeDetail";
@@ -7,7 +6,7 @@ import Predictor from "./pages/Predictor";
 
 function App() {
   return (
-    <BrowserRouter>
+   <HashRouter>
       <Routes>
 
         {/* Landing Page */}
@@ -23,7 +22,7 @@ function App() {
         <Route path="/predictor" element={<Predictor />} />
 
       </Routes>
-    </BrowserRouter>
+   </HashRouter>
   );
 }
 
