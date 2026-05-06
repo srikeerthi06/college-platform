@@ -26,7 +26,7 @@ function Landing() {
 
           {/* Enter App */}
           <button
-            onClick={() => navigate("/home")}
+            onClick={() => navigate("/")}
             className="mt-12 px-10 py-5 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 text-lg font-semibold hover:scale-105 transition duration-300 shadow-2xl"
           >
             🚀 Enter App
